@@ -46,8 +46,8 @@ const Shop = () => {
     return (
         <div>
             <h2>Total Product Available {products.length}</h2>
-            <div className='shop-container grid grid-cols-5 gap-4'>
-                <div className='product-container grid col-span-4 md:grid-cols-2 lg:grid-cols-3 gap-4 shadow-lg'>
+            <div className='md:grid grid-cols-5 gap-4'>
+                <div className='grid col-span-4 md:grid-cols-2 lg:grid-cols-3 gap-4 shadow-lg'>
                     {
                         products.map(product => <Products
                             key={product.id}

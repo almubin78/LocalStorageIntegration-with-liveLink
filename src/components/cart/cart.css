@@ -1,4 +1,9 @@
-.cart-container{
-    position: sticky;
-    top:10px;
+
+/*  700px and UP */
+@media only screen and (min-width: 700px) {
+    .cart-container{
+        position: sticky;
+        top:10px;
+        
+    }
 }

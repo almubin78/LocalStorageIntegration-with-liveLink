@@ -14,14 +14,15 @@ const Cart = ({cart}) => {
     }
     
     return (
-        <div className='cart-container p-1'>
-            <h4 className='mt-2'>Items  <hr />{quantity}</h4>
-            <p className='mt-2'>Price <hr />
+        <div className='cart-container p-2 bg-orange-200 p-1'>
+            <h4>Total Items  <hr />{quantity}</h4>
+            <p className='mt-2'>Total Price <hr />
             ${totalPrice}</p>
             <p className='mt-2'>Shipping Charge <hr />
              ${shipping}</p>
-            <p className='mt-2'>Total Charge <hr />
+            <p className='mt-2 text-purple-500'>Total Charge <hr />
              ${gTotal}</p>
+            <button className='btn btn-warning mt-5'>Proceed</button>
         </div>
     );
 };
