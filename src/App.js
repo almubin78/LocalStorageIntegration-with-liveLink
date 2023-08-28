@@ -1,13 +1,19 @@
-import './App.css';
-import Shop from './components/shop/Shop';
+import React from 'react';
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+
+import Todos from './Todos/Todos'
+const queryClient = new QueryClient();
 
 function App() {
-
   return (
-    <div className="w-[95%] mx-auto">
-        <Shop></Shop>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Todos/>
+    </QueryClientProvider>
   );
 }
+
 
 export default App;
